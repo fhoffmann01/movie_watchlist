@@ -83,9 +83,10 @@ a{
 
 .film-list {
     display: flex;
-    justify-content: center;
+    
     align-items: center;
     flex-direction: column;
+    overflow-y: scroll;
 }
 
 .no-data-initial {
@@ -113,3 +114,46 @@ a{
 }
 
 /**/
+
+.film-entry{
+    display: flex;   
+    width: 80%;
+}
+
+h2, 
+.time, 
+.genres, 
+.watchlist, 
+.numerical-rating {
+    color: #ffffff;
+    margin-right: 1em;   
+}
+
+.time, 
+.genres, 
+.watchlist {
+    font-size: 0.75em;
+}
+
+.movie-image{
+    width: 20%;
+    object-fit:contain;
+    aspect-ratio: 1.5;
+}
+
+.movie-data {
+    margin: 2em;
+}
+
+
+.headline-container,
+.rating-container, 
+.meta-data{
+    display: flex;
+    align-items: center;
+}
+
+.details{
+    color: #A5A5A5;
+}
+
