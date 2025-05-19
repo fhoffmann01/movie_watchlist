@@ -1,69 +1,115 @@
-* {
+:root {
+
+}
+
+*{
     margin: 0;
+    font-family: inter;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(48, 48, 48);
+}
+
+h1 {
+    font-size: 2.5rem;
 }
 
 body{
-    display: block;
-    background-color: #2E2E2F; 
-    justify-content: center;
-    align-items: center;
-    
-    height: 98vh;
-    color: #FFFFFF;
-}
-
-.global-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    height: 98vh;
-    width: 100%;
-}
-
-.header{
-    display: flex;
     position: relative;
-    align-items: center;
 }
 
-.header-image {
-    width: 550px;
-    height: 205px;    
-    object-fit: cover;
-    object-position: 50% center;
-    opacity: 10%;
-}
-
-.header-link-container {
-    display: flex;
-    align-items: center;
-    position: absolute;
-}
-
-.searchbar {
+.app-content {
+    position: relative;
+    background: rgba(0,0,0,0.7)url("/img/headerimage.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
     display: flex;
     justify-content: center;
-    position: absolute;   
-    left: 28.429%;
-    top: 25%;
+    width: 550px;
+    height: 208px;
 }
 
-.app-content{
-    position: relative;
-    width: 550px;
-    height: 779px;
-    border: 2px solid green;
+.header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 80%;
+    color: #ffffff;
+}
+
+a{
+    font-size: 0.75em;
+    text-decoration: none;
+    color: #ffffff;   
+    font-weight: 600;
+}
+
+.film-list{
+    height: 571px;
+    width: 550px;
     background-color: #121212;
 }
 
-.found-films-board{
+.search-element-container {
     display: flex;
-    justify-content: center;
+    position: absolute;
+    width: 80%;
+
+    top: 24.5%;
+    left: 10%;
 }
 
-.start-exploring-icon{
-    position:absolute;
-    top: 50%;
+#searchbar {
+    background-color: #2E2E2F;
+    color: #A5A5A5;
+    padding: 0.5em;
+    flex: 1;
+    border: none;
+    border-radius: 0.4em 0 0 0.4em;
 }
+
+#search-btn {
+    background-color: #4B4B4B;
+    color: #FFFFFF;
+    padding: 0.75em 1.75em;
+    border: none;
+
+    border-radius: 0 0.4em 0.4em 0;
+}
+
+.film-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.no-data-initial {
+    width: 20%;
+}
+
+/*Watchlist.html-only CSS classes*/
+
+.watchlist-empty-paragraph {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #787878;
+}
+
+.add-movies-container {
+    display: flex;
+    align-items: center;
+    height: 2em;
+    margin: 0.75em;
+}
+
+.add-movies-symbol {
+    width: 1.75em;
+    padding: 0.5em;
+}
+
+/**/

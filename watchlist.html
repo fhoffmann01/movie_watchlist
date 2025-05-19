@@ -12,18 +12,17 @@
 <body>
     <section class="app-content">
         <header class="header">
-            <h1>Find your film</h1>
-            <a href="watchlist.html">My Watchlist</a>
+            <h1>My Watchlist</h1>
+            <a href="index.html">Search for movies</a>
         </header>
     </section>
-    <section class="search-element-container">
-        <input type="search" id="searchbar" placeholder="Search for your film...">
-        <button id="search-btn">Search</button>
-    </section>
-  
+    
     <section class="film-list">
-    <!--
-        <img class="no-data-initial" src="/img/no-data-initial.svg" alt="search icon and 'Start exploring' label">
-    -->
+        <p class="watchlist-empty-paragraph">Your watchlist is looking a little empty...</p>
+        <a class="add-movies-container" href="index.html">
+            <img class="add-movies-symbol" src="/img/add-symbol.svg" alt="image of an add symbol">
+            <p class="add-movies-paragraph">Let's add some movies!</p>
+        </a>
+    </section>
 </body>
 </html>
