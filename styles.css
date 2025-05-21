@@ -88,7 +88,6 @@ a{
     border-radius: 0 0.4em 0.4em 0;
 }
 
-
 .no-data-initial {
     width: 20%;
 }
@@ -141,7 +140,7 @@ h2,
 .watchlist,
 .rating-symbol,
 .numerical-rating {
-    font-size: 0.75em;
+    font-size: 0.7rem;
 }
 
 .rating-symbol {
@@ -181,4 +180,26 @@ h2,
 
 .scrollable-content{
     scrollbar-width: none;
+}
+
+.hidden {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+#toggle-text-btn{
+    border: none;
+    background-color: #121212;
+    cursor: pointer;
+    color: #ffffff;
+    padding: 0.4em 0;
+}
+
+#toggle-text-btn:hover{
+    opacity: 85%;
+}
+
+#toggle-text-btn:active{
+    opacity: 35%;
 }

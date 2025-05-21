@@ -68,10 +68,17 @@
                     </div>
                 </div>
                 <div class="details">
-                    Young Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard, who's 
-                    <span id="full-text-fragment">
-                        been missing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, unde autem perspiciatis, pariatur odio modi sapiente doloremque consequatur doloribus labore voluptatibus atque quis, soluta itaque.
+                    <!--"Paragraph length >125 characters => append 3x '.' and 'Read More' checkbox"-->
+                    Young Blade Runner K's discovery of a long-buried secret leads him to track 
+                    down former Blade Runner Rick Deckard, who's been 
+                    <span id="three-dots">...</span>
+                    <span class="hidden" id="full-text-fragment">
+                        missing. Lorem ipsum dolor 
+                        sit amet consectetur adipisicing elit. Impedit, unde autem perspiciatis, 
+                        pariatur odio modi sapiente doloremque consequatur doloribus labore 
+                        voluptatibus atque quis, soluta itaque.
                     </span>
+                    <div id="toggle-text-btn">Read More</div>
                 </div>
             </main>
         </section>
@@ -101,5 +108,6 @@
         </section>
 
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
