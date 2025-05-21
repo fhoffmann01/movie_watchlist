@@ -1,5 +1,5 @@
 :root {
-
+    
 }
 
 *{
@@ -156,9 +156,6 @@ h2,
     margin: 1em 1.75em;
 }
 
-
-
-
 .movie-image{
     width: 20%;
     object-fit: contain;
@@ -169,14 +166,12 @@ h2,
     margin: 0 2em;
 }
 
-
 .headline-container,
 .rating-container, 
 .meta-data,
 .watchlist-container {
     display: flex;
     align-items: center;
-    
 }
 
 .details{
@@ -184,3 +179,6 @@ h2,
     font-size: 0.875rem
 }
 
+.scrollable-content{
+    scrollbar-width: none;
+}
