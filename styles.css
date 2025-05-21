@@ -50,10 +50,12 @@ a{
 
 .film-list{
     display: flex;
+    justify-content: center;
     padding: 2em 0;
     align-items: center;
     flex-direction: column;
     overflow-y: scroll;
+    scrollbar-width: none;
     height: 571px;
     width: 550px;
     background-color: #121212;
