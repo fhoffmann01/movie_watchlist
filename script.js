@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchBar = document.getElementById("search-bar")
     const filmList = document.querySelectorAll(".film-list")
 
+<<<<<<< Updated upstream
     //toggleTextBtn.addEventListener('click', () => {
     //    //Change value of toggle div
     //    
@@ -83,3 +84,33 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log(searchBarInput)
 })
 
+=======
+
+toggleTextBtn.addEventListener('click', () => {
+    
+    if(toggleTextBtn.textContent === "Read More"){
+
+        threeDots.classList.add('hidden')
+        fullTextFragment.classList.remove('hidden')
+        toggleTextBtn.textContent = "Read Less"
+
+    } else if(toggleTextBtn.textContent === "Read Less"){
+
+        threeDots.classList.remove('hidden')
+        fullTextFragment.classList.add('hidden')
+        toggleTextBtn.textContent = "Read More"
+    }
+})
+
+
+//fetch data from API
+
+async function fetchData(){
+    const response = await fetch(`http://www.omdbapi.com/?apikey=30f74df&s=Speed`)
+    const data = await response.json()
+
+    console.log(data.Search)
+}
+
+fetchData()
+>>>>>>> Stashed changes
